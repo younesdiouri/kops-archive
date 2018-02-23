@@ -207,7 +207,7 @@ input:-webkit-autofill:focus {
 }
 
 .top-area-bg {
-	background: rgba(0, 0, 0, 0) url("img/slider/slide_1.jpg") no-repeat scroll center center / cover;
+	background: rgba(0, 0, 0, 0) url(img/interieur/bureau.JPG) no-repeat scroll center center / cover;
 	height: 100%;
 	left: 0;
 	position: absolute;
@@ -518,11 +518,11 @@ ul#nav li.hover-yellow a:hover {
 }
 
 .slide-one .slider-bg {
-	background: url(img/slider/slide_2.jpg)no-repeat scroll center center / cover;
+	background: url(img/interieur/slider_1.JPG)no-repeat scroll center center / cover;
 }
 
 .slide-two .slider-bg {
-	background: url(img/slider/slide_1.jpg)no-repeat scroll center center / cover;
+	background: url(img/interieur/slider_2.JPG)no-repeat scroll center center / cover;
 }
 
 .welcome-slider-area.owl-carousel .owl-nav>div {
