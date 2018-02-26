@@ -398,9 +398,6 @@ ul#nav li.hover-yellow a:hover {
 	text-transform: capitalize;
 }
 
-.welcome-text h1 span {
-	color: #FFD602;
-}
 
 .welcome-text p {
 	-webkit-animation-delay: 0.5s;
@@ -1424,7 +1421,7 @@ ul#nav li.active#hover-blue a, li#hover-blue a:hover{
 	color : #008CA8;
 }
 ul#nav li.active#hover-red a, li#hover-red a:hover{
-	color : #804E5B;
+	color : #912920;
 }
 ul#nav li.active#hover-grey a, li#hover-grey a:hover{
 	color : #8ca0b4;
