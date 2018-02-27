@@ -399,7 +399,7 @@ ul#nav li.hover-yellow a:hover {
 	text-transform: capitalize;
 }
 .welcome-text h1 span{
-	text-shadow: 0 1px 2px black, 0 0 10px white, 0 0 3px white;
+	opacity: 1.5;
 }
 
 .welcome-text p {
@@ -1096,7 +1096,7 @@ ul.social-bookmark {
 }
 
 .quote-area-bg::after {
-	background: #8ca0b4 none repeat scroll 0 0;
+	background: #88898A none repeat scroll 0 0;
 	content: "";
 	height: 100%;
 	left: 0;
@@ -1249,11 +1249,6 @@ ul.social-bookmark {
 	padding-top: 3px;
 	text-align: center;
 	width: 30px;
-}
-
-.footer-bottom-area {
-	background: #8ca0b4 none repeat scroll 0 0;
-	color: #fff;
 }
 
 .footer-copyright {
@@ -1410,6 +1405,13 @@ a.navbar-brand {
 	width: 40px;
 	text-align: center;
 }
+@media (max-width : 769px) {
+	.social-header{
+		top: 4%;
+		left: 5%;
+		position: fixed;
+	}
+}
 .social-header a:hover {
 	background: #FFD602 none repeat scroll 0 0;
 	border-color: #FFD602;
@@ -1427,5 +1429,5 @@ ul#nav li.active#hover-red a, li#hover-red a:hover{
 	color : #912920;
 }
 ul#nav li.active#hover-grey a, li#hover-grey a:hover{
-	color : #8ca0b4;
+	color : #88898A;
 }
