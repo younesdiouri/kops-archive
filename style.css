@@ -388,6 +388,7 @@ ul#nav li.hover-yellow a:hover {
 }
 
 .welcome-text h1 {
+
 	-webkit-animation-delay: 0.3s;
 	animation-delay: 0.3s;
 	color: #ffffff;
@@ -397,7 +398,9 @@ ul#nav li.hover-yellow a:hover {
 	margin-bottom: 30px;
 	text-transform: capitalize;
 }
-
+.welcome-text h1 span{
+	text-shadow: 0 1px 2px black, 0 0 10px white, 0 0 3px white;
+}
 
 .welcome-text p {
 	-webkit-animation-delay: 0.5s;
