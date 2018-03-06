@@ -947,14 +947,6 @@ ul#nav li.hover-yellow a:hover {
 	color: #fff;
 	font-weight: bold;
 }
-.testmonial-author-details {
-	background: #fff none repeat scroll 0 0;
-	-webkit-box-shadow: 0 0 5px #ebebeb;
-	box-shadow: 0 0 5px #ebebeb;
-	margin-bottom: 30px;
-	padding: 40px 20px 20px;
-	position: relative;
-}
 
 .member-image img {
 	background: #FFD602 none repeat scroll 0 0;
@@ -962,25 +954,45 @@ ul#nav li.hover-yellow a:hover {
 	padding: 3px;
 }
 
-.testmonial-author-details::after {
-	border-bottom: 10px solid transparent;
-	border-right: 40px solid transparent;
-	border-top: 30px solid #ffffff;
-	bottom: -40px;
-	content: "";
-	height: 40px;
-	left: 50px;
-	position: absolute;
-	width: 40px;
+.testimonials {
+	background-color: #e8e8e5;
+	overflow: hidden;
+	width: 100%;
 }
 
-.testmonial-area .owl-carousel .owl-item img {
-	height: 80px;
-	max-width: 100%;
-	width: 80px;
+.testimonials ul {
+	list-style: none;
+	position: relative;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	padding: 0;
 }
 
+.testimonials ul li {
+	display: inline-block;
+	padding: 1rem;
+	position: relative;
+	text-align: center;
+	width: 100vw;
+}
 
+.testimonials ul li p {
+	max-width: 600px;
+	margin: 1rem auto;
+	width: 50%;
+}
+
+.testimonials-control {
+	background-color: rgba(255,255,255,0.2);
+	display: flex;
+	justify-content: center;
+}
+
+.testimonials-control i {
+	cursor: pointer;
+	padding: 1.3rem;
+}
 /*------------------------------
 	7. PILATES AREA
 --------------------------------*/
