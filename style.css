@@ -957,7 +957,8 @@ ul#nav li.hover-yellow a:hover {
 .testimonials {
 	background-color: #e8e8e5;
 	overflow: hidden;
-	width: 100%;
+	width: 50%;
+	margin: auto;
 }
 
 .testimonials ul {
@@ -974,13 +975,31 @@ ul#nav li.hover-yellow a:hover {
 	padding: 1rem;
 	position: relative;
 	text-align: center;
-	width: 100vw;
+	width: 50vw;
+}
+@media (max-width : 600px) {
+	.testimonials {
+		background-color: #e8e8e5;
+		overflow: hidden;
+		width: 100%;
+		margin: auto;
+	}
+	.testimonials ul li {
+		display: inline-block;
+		padding: 1rem;
+		position: relative;
+		text-align: center;
+		width: 100vw;
+	}
 }
 
 .testimonials ul li p {
 	max-width: 600px;
 	margin: 1rem auto;
-	width: 50%;
+	width: 70%;
+}
+.testimonials ul li h3 {
+	text-transform: none;
 }
 
 .testimonials-control {
@@ -1002,7 +1021,7 @@ ul#nav li.hover-yellow a:hover {
 }
 
 .team-area-bg {
-	background: #fff url("img/team/team-area-bg.jpg") no-repeat scroll center center / cover;
+	background: #fff url("img/pilates/pilates.JPG") no-repeat scroll center center / cover;
 	height: 100%;
 	left: 0;
 	position: absolute;
@@ -1098,7 +1117,7 @@ ul.social-bookmark {
 }
 
 .quote-area-bg {
-	background: rgba(0, 0, 0, 0) url("img/quate-area-bg.jpg") no-repeat scroll center center / cover;
+	background: rgba(0, 0, 0, 0) url("img/sante/sante.JPG") no-repeat scroll center bottom / cover;
 	height: 100%;
 	left: 0;
 	position: absolute;

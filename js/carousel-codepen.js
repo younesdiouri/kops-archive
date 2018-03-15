@@ -7,20 +7,22 @@ var tRightButton = $("#testimonials-r");
 
 var tItemCount = document.getElementById('testimonials-ul').querySelectorAll('li').length;
 
-// Set length based on that
-
-var tWidth = tItemCount * 100 + "vw";
+// Set length based on that and differing from device used
+var slideSize = 50;
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    slideSize = 100;
+}
+var tWidth = tItemCount * slideSize + "vw";
 $(".testimonials ul").css("width", tWidth);
 
 // Button functionality
 
 var tPosition = 0;
-console.log(tPosition);
 
 tRightButton.click(function() {
     if (tPosition < (tItemCount - 1)) {
         tPosition++;
-        var m = "-" + (100 * tPosition) + "vw";
+        var m = "-" + (slideSize * tPosition) + "vw";
         $(".testimonials ul").animate({
             "left": m
         }, 500);
@@ -31,7 +33,7 @@ tRightButton.click(function() {
 tLeftButton.click(function() {
     if (tPosition > 0) {
         tPosition--;
-        var m = "-" + (100 * tPosition) + "vw";
+        var m = "-" + (slideSize * tPosition) + "vw";
         $(".testimonials ul").animate({
             "left": m
         }, 500);
@@ -54,7 +56,7 @@ var greyButton = function() {
         tLeftButton.css("opacity", "1");
         tLeftButton.css("cursor", "pointer");
     }
-}
+};
 
 greyButton();
 
