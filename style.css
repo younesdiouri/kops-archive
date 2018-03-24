@@ -388,7 +388,9 @@ ul#nav li.hover-yellow a:hover {
 }
 
 .welcome-text h1 {
-
+    position: absolute;
+    left:-15%;
+    right: -17%;
 	-webkit-animation-delay: 0.3s;
 	animation-delay: 0.3s;
 	color: #ffffff;
@@ -397,6 +399,7 @@ ul#nav li.hover-yellow a:hover {
 	line-height: 1;
 	margin-bottom: 30px;
 	text-transform: capitalize;
+    background-color: rgb(145,41,32,);
 }
 .welcome-text h1 span{
 	opacity: 1.5;
@@ -1376,22 +1379,20 @@ a.scrolltotop:hover {
 /* 13 LOGO NAV CUSTOM*/
 .navbar-brand {
 	position: fixed;
-	width: 40%;
+	width: 15%;
 	height: 20%;
-	left: 10px;
-	top: -5%;
 }
 
 .navbar-brand>img {
-	margin-left: -10%;
 	-webkit-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
-	width: 60%;
+    width: 55%;
+    margin-top: -14%;
+    margin-left: -40%;
 }
 
 .is-sticky .navbar-brand>img {
-	margin-left: -10%;
-	width: 60%;
+	width: 39%;
 }
 
 a.navbar-brand {
@@ -1437,6 +1438,7 @@ a.navbar-brand {
 }
 @media (max-width : 769px) {
 	.social-header{
+        width: 30%;
 		top: 4%;
 		left: 5%;
 		position: fixed;
