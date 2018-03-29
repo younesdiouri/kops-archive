@@ -385,12 +385,11 @@ ul#nav li.hover-yellow a:hover {
 	margin-right: 15px;
 	position: relative;
 	top: 0;
+	background: rgba(145,41,32,0.2);
 }
 
 .welcome-text h1 {
-    position: absolute;
-    left:-15%;
-    right: -17%;
+    position: relative;
 	-webkit-animation-delay: 0.3s;
 	animation-delay: 0.3s;
 	color: #ffffff;
@@ -399,7 +398,8 @@ ul#nav li.hover-yellow a:hover {
 	line-height: 1;
 	margin-bottom: 30px;
 	text-transform: capitalize;
-    background-color: rgb(145,41,32,);
+    /*background-color: rgba(145,41,32,0.5); */
+	margin-bottom: 50px;
 }
 .welcome-text h1 span{
 	opacity: 1.5;
