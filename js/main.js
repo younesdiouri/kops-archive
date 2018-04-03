@@ -100,10 +100,9 @@ jQuery(document).on('ready', function ($) {
 		loop: true,
 		nav: true,
 		navText: ['<i class="icofont icofont-thin-left"></i>', '<i class="icofont icofont-thin-right"></i>'],
-		autoplay: false,
+		autoplay: true,
 		autoplayTimeout: 3000,
 		margin: 0,
-
 		animateOut: 'fadeOut',
 		responsiveClass: true,
         singleItem:true,
@@ -145,6 +144,19 @@ jQuery(document).on('ready', function ($) {
 	/* ------------------------------
      PROJECT FILTERING
      -------------------------------- */
+
+	/* Isotope on load filter  */
+    $(".project-gallery").isotope({
+        itemSelector: '.single-project',
+        filter: '.reception',
+        animationOptions: {
+            duration: 750,
+            easing: 'linear',
+            queue: false,
+        }
+    });
+
+    /* Isotope onclick event */
 	$('.project-menu li').on('click', function () {
 		$(this).addClass('active');
 		var filterValue = $(this).attr('data-filter');
@@ -180,7 +192,7 @@ jQuery(document).on('ready', function ($) {
 		loop: true,
 		nav: false,
 		navText: ['<i class="icofont icofont-long-arrow-left"></i>', '<i class="icofont icofont-long-arrow-right"></i>'],
-		autoplay: false,
+		autoplay: true,
 		autoplayTimeout: 2000,
 		margin: 30,
 		responsiveClass: true,
