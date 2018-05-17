@@ -100,7 +100,7 @@ jQuery(document).on('ready', function ($) {
 		loop: true,
 		nav: true,
 		navText: ['<i class="icofont icofont-thin-left"></i>', '<i class="icofont icofont-thin-right"></i>'],
-		autoplay: true,
+		autoplay: false,
 		autoplayTimeout: 3000,
 		margin: 0,
 		animateOut: 'fadeOut',

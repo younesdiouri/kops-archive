@@ -85,10 +85,10 @@ body {
 }
 
 body {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 14px;
+	font-family: 'Calibri', sans-serif;
+	font-size: 18px;
 	line-height: 1.5em;
-	font-weight: 400;
+	font-weight: 100;
 	color: #804E5B;
 }
 
@@ -319,7 +319,7 @@ ul#nav li a {
 ul#nav li.active.hover-yellow a,
 ul#nav li.hover-yellow a:hover {
 	color:  #FFD602;
-	/*text-decoration: line-through;*/
+	text-decoration: underline;
 }
 
 .is-sticky .mainmenu-area {
@@ -385,33 +385,42 @@ ul#nav li.hover-yellow a:hover {
 	margin-right: 15px;
 	position: relative;
 	top: 0;
-	background: rgba(145,41,32,0.2);
-}
-
-.welcome-text h1 {
-    position: relative;
-	-webkit-animation-delay: 0.3s;
-	animation-delay: 0.3s;
-	color: #ffffff;
-	font-size: 45px;
-	font-weight: 700;
-	line-height: 1;
-	margin-bottom: 30px;
-	text-transform: capitalize;
-    /*background-color: rgba(145,41,32,0.5); */
-	margin-bottom: 50px;
-}
-.welcome-text h1 span{
-	opacity: 1.5;
 }
 
 .welcome-text p {
+	position: absolute;
+	bottom: 10%;
 	-webkit-animation-delay: 0.5s;
 	animation-delay: 0.5s;
 	letter-spacing: 2px;
 	margin-bottom: 40px;
 }
-
+.welcome-text img#welcoming-logo {
+	position: relative;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+	transform: scale(0.4);
+}
+@media (max-width : 600px) {
+	.welcome-text img#welcoming-logo {
+		position: relative;
+		right: 0;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		-webkit-animation-delay: 0.3s;
+		animation-delay: 0.3s;
+		-webkit-transform: scale(1.6);
+		-moz-transform: scale(1.6);
+		-ms-transform: scale(1.6);
+		-o-transform: scale(1.6);
+		transform: scale(1.6);
+	}
+}
 .welcome-image-layer {
 	-webkit-animation-delay: 0.7s;
 	animation-delay: 0.7s;
@@ -514,20 +523,28 @@ ul#nav li.hover-yellow a:hover {
 	content: "";
 	height: 100%;
 	left: 0;
-	opacity: 0.5;
+	opacity: 0.2;
 	position: absolute;
 	top: 0;
 	width: 100%;
 }
 
 .slide-one .slider-bg {
-	background: url(img/interieur/slider_1.JPG)no-repeat scroll center center / cover;
+	background: url(img/slider/photo1.JPG)no-repeat scroll center center / cover;
 }
 
 .slide-two .slider-bg {
-	background: url(img/interieur/slider_2.JPG)no-repeat scroll center center / cover;
+	background: url(img/slider/photo2.JPG)no-repeat scroll center center / cover;
 }
-
+.slide-three .slider-bg {
+	background: url(img/slider/photo3.JPG)no-repeat scroll center center / cover;
+}
+.slide-four .slider-bg {
+	background: url(img/slider/photo4.JPG)no-repeat scroll center center / cover;
+}
+.slide-five .slider-bg {
+	background: url(img/slider/photo5.JPG)no-repeat scroll center center / cover;
+}
 .welcome-slider-area.owl-carousel .owl-nav>div {
 	background: #fff none repeat scroll 0 0;
 	display: inline-block;
@@ -1456,10 +1473,14 @@ a.navbar-brand {
 /*15.NAV HOVERS COLOURED */
 ul#nav li.active#hover-blue a, li#hover-blue a:hover{
 	color : #008CA8;
+	text-decoration: underline;
 }
 ul#nav li.active#hover-red a, li#hover-red a:hover{
 	color : #912920;
+	text-decoration: underline;
 }
-ul#nav li.active#hover-grey a, li#hover-grey a:hover{
+ul#nav li.active.hover-grey a,
+ul#nav li.hover-grey a:hover {
 	color : #88898A;
+	text-decoration: underline;
 }
