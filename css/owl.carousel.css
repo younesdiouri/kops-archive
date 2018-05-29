@@ -67,6 +67,8 @@
 .owl-carousel .owl-stage {
     position: relative;
     -ms-touch-action: pan-Y;
+    /* Full Height */
+    height: 100vh;
 }
 
 .owl-carousel .owl-stage:after {
@@ -224,8 +226,27 @@
     -webkit-transition: opacity 400ms ease;
     transition: opacity 400ms ease;
 }
-
+/* FULL Height SLIDER */
 .owl-carousel .owl-video-frame {
     position: relative;
     z-index: 1;
+}
+.owl-wrapper-outer {
+    height: 100% !important;
+}
+
+.owl-wrapper {
+    height: 100%;
+}
+
+.owl-item {
+    height: 100%;
+}
+
+.b-Amarelo {
+    height: 100%;
+}
+
+.owl-item h1 {
+    margin: 0;
 }
