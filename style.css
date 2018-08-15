@@ -855,16 +855,24 @@ ul#nav li.hover-yellow a:hover {
 	position: relative;
 	z-index: 9;
 }
-
-.service-area::after {
-	background: rgba(0, 0, 0, 0) url("img/service-bg-top-layer.png") no-repeat scroll center center / cover;
-	content: "";
+.service-area-bg {
+	background: #fff url("img/backgrounds/kine.JPG") no-repeat scroll center center / cover;
 	height: 100%;
 	left: 0;
 	position: absolute;
 	top: 0;
 	width: 100%;
-	z-index: -1;
+}
+
+.service-area-bg::after {
+	background: #fff none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.3;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 .single-service {
@@ -987,18 +995,38 @@ ul#nav li.hover-yellow a:hover {
 /*-----------------------------
 	6. OSTEO AREA
 ------------------------------*/
-.testmonial-area {
-	background: #912920 none repeat scroll 0 0;
+.testmonial-area.section-padding {
+	padding-bottom: 50px;
+	position: relative;
+}
+.testmonial-area-bg {
+	background: #fff url("img/backgrounds/osteo.JPG") no-repeat scroll center center / cover;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.testmonial-area-bg::after {
+	background: #fff none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 .testmonial-area h2{
-	color : #FFD602;
+	color : #804E5B;
 }
 .testmonial-area .area-title{
 	color: #000;
 	font-weight: 600;
 }
 .testmonial-area p{
-	font-size : 16px;
+	font-size : 20px;
 }
 .testmonial-area span{
 	font-size: 20px;
@@ -1014,10 +1042,12 @@ ul#nav li.hover-yellow a:hover {
 
 
 .testimonials {
+	position: relative;
 	background-color: #e8e8e5;
 	overflow: hidden;
 	width: 50%;
 	margin: auto;
+	border-radius: 20%;
 }
 
 .testimonials ul {
